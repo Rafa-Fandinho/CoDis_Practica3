@@ -56,7 +56,11 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public double sqrt(int a) {
-        return Math.sqrt(a);
+        if(a>=0){
+            return Math.sqrt(a);}
+        else{
+            throw new ArithmeticException("O número indicado para a raíz cadrada debe ser non negativo");
+        }
     }
 
     @Override

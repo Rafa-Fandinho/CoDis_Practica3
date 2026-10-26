@@ -31,7 +31,7 @@ public interface Calculator {
 
     @WebMethod(operationName = "raíz")
     @WebResult(name = "resultado")
-    double sqrt(@WebParam(name = "num1") int a);
+    double sqrt(@WebParam(name = "num1") int a) throws ArithmeticException;
 
     @WebMethod(operationName = "logaritmo")
     @WebResult(name = "resultado")
