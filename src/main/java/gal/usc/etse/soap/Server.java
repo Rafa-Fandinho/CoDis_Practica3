@@ -16,6 +16,6 @@ public class Server {
         String address2 = "http://localhost:8080/textAnalyzer";
         Endpoint.publish(address2, t);
         System.out.println("Calculadora publicada en: " + address + "?wsdl");
-        System.out.println("Analizador de textos publicado en:" + address2 + "?wsdl");
+        System.out.println("Analizador de textos publicado en: " + address2 + "?wsdl");
     }
 }
